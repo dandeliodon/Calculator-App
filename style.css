@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+--accent--color: hsl(36, 100%, 52%);
+--accent--color--hover: hsl(36, 94%, 73%);
+--button--color: hsl(0, 0%, 20%);
+--button--color--hover: hsl(0, 0%, 40%);
+--button--color--2: hsl(0, 2%, 28%);
+
+--box--color: hsl(0, 0%, 0%);
+--text--color: hsl(0, 0%, 100%);
+--background--color: hsl(253, 85%, 11%);
+}
+
+body{
+    color: var(--text--color);
+    background-color: var(--background--color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border: 2px solid; */
+    width: 250px;
+    /* max-width: 100%; */
+    padding: 5px;
+    border-radius: 8%;
+    background-color: var(--box--color);
+}
+
+
+h1{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+#display{
+    height: 70px;
+    width: 100%;
+    padding: 0px 5px;
+    margin-top: 10px;
+    /* margin-bottom: 10px; */
+    color: var(--text--color);
+    background-color: var(--box--color);
+    border: none;
+    text-align: end;
+    vertical-align: bottom;
+    font-size: 25px;
+}
+
+
+
+/* Calculator Container */
+.calculator{
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+    gap: 10px;
+    position: relative;
+}
+
+/* Buttons */
+button{
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: var(--text--color);
+    background-color: var(--button--color);
+    border: none;
+}
+
+button:hover{
+    background-color: var(--button--color--hover);
+}
+
+#symbols{
+    background-color: var(--accent--color);
+}
+
+#symbols:hover{
+    background-color: var(--accent--color--hover);
+}
+
+#operators{
+    background-color: var(--button--color--2);
+}
+
+#operators:hover{
+    background-color: var(--button--color--hover);
+}
